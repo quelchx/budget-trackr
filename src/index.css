@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-blue-600 text-white font-bold
+    hover:bg-white hover:text-blue-600
+    border border-blue-600 
+    uppercase text-sm px-6 py-3 
+    rounded shadow hover:shadow-lg 
+    outline-none focus:outline-none mr-1 
+    mb-1 ease-linear transition-all duration-150;
+  }
+  .secondary-btn {
+    @apply border border-gray-600 text-gray-600 font-bold 
+    hover:bg-gray-600 hover:text-white hover:border-gray-600
+    uppercase text-sm px-6 py-3 
+    rounded shadow hover:shadow-lg 
+    outline-none focus:outline-none mr-1 
+    mb-1 ease-linear transition-all duration-150;
+  }
+
+  .danger-btn {
+    @apply text-red-500  
+    font-bold uppercase px-6 py-2 text-sm 
+    outline-none focus:outline-none 
+    mr-1 mb-1 ease-linear transition-all duration-150
+  }
+}
